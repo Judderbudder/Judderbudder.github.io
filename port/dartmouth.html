@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newstyles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dartmouth</h1>
+            <div style="margin-left: 150px">
+                <!-- influced heavily by https://www.youtube.com/watch?v=wnseY8goQoc all button photo credits go to him-->
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="/Users/Work/HomePage copy/port/Dartmouth.jpg" alt="Dartmouth" width="650">
+                            <img src="/Users/Work/HomePage copy/port/play.png" class="play-btn" onclick="playVideo('/portfolio/Bean.mp4')" alt="play">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="/Users/Work/HomePage copy/port/dart22.jpg" alt="Dartmouth" width="200">
+                                <img src="/Users/Work/HomePage copy/port/play.png" class="play-btn" onclick="playVideo('/port/dart22.jpg')" alt="play">
+                            </div> 
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="/Users/Work/HomePage copy/port/g.jpg" alt="Dartmouth" width="200">
+                                <img src="/Users/Work/HomePage copy/port/play.png" class="play-btn" onclick="playVideo('Sky.MP4')" alt="play">
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video style="width:100%" controls autoplay id="myVideo">
+            <source src="/Users/Work/HomePage copy/port/Bean1.mp4">
+            </video>
+            <img src="/Users/Work/HomePage copy/port/close.png" class="close-btn" onclick="stopVideo()" alt="play">
+        </div>
+        
+        <script>
+            // influced heavily by https://www.youtube.com/watch?v=wnseY8goQoc
+            // collects the videoplayer and sets it and the my video to varibles
+            var photoPlayer = document.getElementById("videoPlayer");
+            var myVideo = document.getElementById("myVideo");
+            
+            // if the stop button is clicked then it disapears it
+            function stopPhoto() {
+                photoPlayer.style.display = "none"
+            }
+            // if the play button is clicked then it displays it
+            function playPhoto (file) {
+                myPhoto.src = file;
+                videoPlayer.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
